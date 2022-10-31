@@ -1,2 +1,2 @@
-# ⚪ ⚪TryHackMe WriteUps
+# ⚪TryHackMe WriteUps.
 
