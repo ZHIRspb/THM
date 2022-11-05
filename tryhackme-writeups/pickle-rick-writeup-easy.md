@@ -32,7 +32,7 @@
 
 🔎 **** Итак, первый ингредиент написан в файле **Sup3rS3cretPickl3Ingred.txt**
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Для того, чтобы подключиться к данной машине, используем **python3 reverse shell**&#x20;
 
@@ -42,7 +42,7 @@
 
 &#x20;
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -50,7 +50,7 @@
 
 :mag\_right: Перейдя в директорию **/home**, мы можем найти папку **rick**, в которой и находится второй ингредиент
 
-![](<../.gitbook/assets/image (3) (2).png>)
+![](<../.gitbook/assets/image (3).png>)
 
 С помощью команды `sudo -l` мы можем узнать, какие sudo-права мы имеем как пользователь **www-data**
 
@@ -64,5 +64,4 @@
 
 Выводим содержимое файла и получаем последний флаг для данной машины&#x20;
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
