@@ -46,6 +46,8 @@
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-Перейдя в директорию **/home**, мы можем найти папку **rick**, в которой и находится второй ингредиент
+&#x20;
+
+:mag\_right: Перейдя в директорию **/home**, мы можем найти папку **rick**, в которой и находится второй ингредиент
 
 ![](<../.gitbook/assets/image (3).png>)
