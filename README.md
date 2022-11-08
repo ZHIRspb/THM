@@ -1,7 +1,7 @@
 # ⚪TryHackMe WriteUps
 
-|                            Easy 🟢                            |       Medium 🟠       |             Hard 🔴            |
-| :-----------------------------------------------------------: | :-------------------: | :----------------------------: |
-| [Pickle Rick](tryhackme-writeups/pickle-rick-writeup-easy.md) | SFDAFDSDFDAADSDFAAFDS | FSDDFSADFAAFDFDASFDSAFDSDFAFDS |
-|     [Startup](tryhackme-writeups/startup-writeup-easy.md)     |                       |                                |
-|                                                               |                       |                                |
+|                            Easy 🟢                            |                       Medium 🟠                       |                       Hard 🔴                       |
+| :-----------------------------------------------------------: | :---------------------------------------------------: | :-------------------------------------------------: |
+| [Pickle Rick](tryhackme-writeups/pickle-rick-writeup-easy.md) |                                                       |                                                     |
+|     [Startup](tryhackme-writeups/startup-writeup-easy.md)     |                                                       |                                                     |
+|                                                               |                                                       |                                                     |
