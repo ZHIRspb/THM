@@ -12,7 +12,7 @@
 
 Благодаря сканеру мы узнаём, что можем подключиться по протоколу **ftp** под именем пользователя **Anonymous**
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p>📌В качестве пароля я так же указал слово <strong>Anonymous</strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>📌В качестве пароля я так же указал слово <strong>Anonymous</strong></p></figcaption></figure>
 
 В данном каталоге мы имеем пустую директорию **/ftp** (к ней мы вернемся позже), текстовый файл **notice.txt** и **мем**😐
 
@@ -26,7 +26,7 @@
 
 Перейдя по нему, можем заметить, что данный каталог мы уже видели&#x20;
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 Используя ftp подключение, попробуем прокинуть в директорию **/ftp** [php\_reverse\_shell](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php), заранее изменив в нем параметры **$ip** и **$port**
 
