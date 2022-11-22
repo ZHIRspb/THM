@@ -16,7 +16,7 @@
 
 В данном каталоге мы имеем пустую директорию **/ftp** (к ней мы вернемся позже), текстовый файл **notice.txt** и **мем**😐
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -34,7 +34,7 @@
 
 С помощью команды cd переходим в директорию **/ftp** и далее используя команду `put <shell_name.php>` загружаем наш шелл
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 Запустив слушатель в терминале Linux, нажимаем на **.php** файл во вкладке **machine\_ip/files** и затем получаем реверс шелл от лица пользователя **www-data**
 
@@ -52,20 +52,20 @@
 
 Перейдя в папку **/incidents** и используя **python3**, с помощью команды `python3 -m http.server` поднимаем сервер и скачиваем нужный нам файл с помощью команды `wget http://<ip_machine>:8000/suspicious.pcapng`
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 Данный файл содержит в себе дамп сетевых пакетов, перехваченных программами-анализаторами (например **WireShark**)
 
 Найдя самый "большой" TCP пакет, просмотрим его содержимое с помощью **TCP Stream**'a
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
 В нем находим имя пользователя **lennie** и, вероятнее всего, пароль к нему **c4ntg3t3n0ughsp1c3**
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
 
 Нам остаётся лишь подключиться по протоколу ssh от лица пользователя **lennie** и прочитать содержимое файла **user.txt** 🚩
 
 <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
