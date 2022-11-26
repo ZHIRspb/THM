@@ -16,7 +16,7 @@
 
 Далее, используя инструмент **gobuster** (`gobuster dir -u pent.thm -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100 -x .php)` находим несколько скрытых файлов
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Конкретно в данному случае нас интересует файл **/login.php**, перейдя по которому мы попадаем на страницу авторизации
 
@@ -32,7 +32,7 @@
 
 🔎 **** Итак, первый ингредиент написан в файле **Sup3rS3cretPickl3Ingred.txt**
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Для того, чтобы подключиться к данной машине, используем **python3 reverse shell**&#x20;
 
@@ -54,7 +54,7 @@
 
 С помощью команды `sudo -l` мы можем узнать, какие sudo-права мы имеем как пользователь **www-data**
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 В данном случае нам доступны все команды пользователя **root** без пароля &#x20;
 
