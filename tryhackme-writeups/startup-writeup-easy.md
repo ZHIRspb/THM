@@ -16,9 +16,9 @@
 
 В данном каталоге мы имеем пустую директорию **/ftp** (к ней мы вернемся позже), текстовый файл **notice.txt** и **мем**😐
 
-<figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Далее, используя инструмент **gobuster** (`gobuster dir -u <ip> -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 100 -x .php)` находим скрытый каталог **/files**
 
@@ -30,7 +30,7 @@
 
 Используя ftp подключение, попробуем прокинуть в директорию **/ftp** [php\_reverse\_shell](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php), заранее изменив в нем параметры **$ip** и **$port**
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>📌 <strong></strong> Узнать свой tun0 ip можно, используя команду i<strong>fconfig</strong> в терминале Linux</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption><p>📌 <strong></strong> Узнать свой tun0 ip можно, используя команду i<strong>fconfig</strong> в терминале Linux</p></figcaption></figure>
 
 С помощью команды cd переходим в директорию **/ftp** и далее используя команду `put <shell_name.php>` загружаем наш шелл
 
@@ -62,7 +62,7 @@
 
 В нем находим имя пользователя **lennie** и, вероятнее всего, пароль к нему **c4ntg3t3n0ughsp1c3**
 
-<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Нам остаётся лишь подключиться по протоколу ssh от лица пользователя **lennie** и прочитать содержимое файла **user.txt** 🚩
 

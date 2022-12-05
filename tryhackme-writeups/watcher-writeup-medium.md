@@ -10,7 +10,7 @@
 
 В файле **flag\_1.txt** находится первый флаг🚩
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 Во втором файле находится записка, но мы не можем прочитать её содержимое, просто перейдя в него с помощью адресной строки
 
@@ -54,7 +54,7 @@
 
 <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
 
 Записка **note.txt** намекает нам, что в папке **jobs** находится скрипт, который выполняется в определенный период времени (с помощью инструмента **cron**)
 
@@ -98,7 +98,7 @@
 
 &#x20;
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;Подключаемся по протоколу **ssh** от имени пользователя **root** используя команду&#x20;
 
